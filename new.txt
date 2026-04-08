@@ -33,7 +33,7 @@ Install Required Software
 3. Install MongoDB (optional)
 4. Install Google Chrome browser
 5. Install Git (optional)
-Create Project Folder
+6. Create Project Folder
 Students should create a project folder such as:
 RealTimeCollaborationApp
 Inside the folder create two main parts:
