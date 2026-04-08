@@ -1,0 +1,166 @@
+Assignment Guide
+Build a Real-Time Collaboration App
+Project Goal
+The goal of this project is to build a real-time collaboration application where multiple
+users can communicate instantly and see live updates without refreshing the page.
+The application will demonstrate real-time communication using WebSockets, user
+interaction, and live updates.
+Step 1 – Understand the Project
+Before starting development, students must understand the main features of the
+system.
+Required Features
+1. Real-time chat system
+2. Multiple users connected at the same time
+3. Live updates without page refresh
+4. User join and leave notifications
+5. Simple interactive dashboard showing active users
+Technologies Used
+Frontend
+• HTML
+• CSS
+• JavaScript
+Backend
+• Node.js
+• Express.js
+• Socket.IO
+Database (Optional)
+• MongoDB
+Step 2 – Setup the Development Environment
+Students should prepare the development environment.
+Install Required Software
+1. Install Node.js
+2. Install Visual Studio Code
+3. Install MongoDB (optional)
+4. Install Google Chrome browser
+5. Install Git (optional)
+Create Project Folder
+Students should create a project folder such as:
+RealTimeCollaborationApp
+Inside the folder create two main parts:
+Frontend
+Backend
+This helps organize the project clearly.
+Step 3 – Design the Application Structure
+Before writing code, students should plan the structure of the application.
+Frontend Pages
+Students should design the following interface:
+1. Login / Join page
+o User enters name
+o User enters room name
+2. Chat room page
+o Message display area
+o Message input box
+o Send button
+o Online users list
+3. Dashboard section
+o Shows number of active users
+o Shows connection status
+Step 4 – Plan the Backend System
+Students must design how the server will manage connections.
+The backend server will:
+1. Accept user connections
+2. Manage chat rooms
+3. Receive messages
+4. Send messages to all users
+5. Track users joining and leaving
+Students should clearly understand client-server communication.
+Step 5 – Establish WebSocket Connection
+When the user opens the application:
+1. The browser connects to the server.
+2. A WebSocket connection is created.
+3. The server stores the user connection.
+This connection will remain active for real-time communication.
+Step 6 – Implement User Join System
+Students must allow users to join a chat room.
+Process:
+1. User enters username.
+2. User enters room name.
+3. User clicks Join.
+4. The application sends user information to the server.
+5. The server registers the user in that room.
+The system should also:
+Display message:
+"User has joined the room."
+Step 7 – Manage Multiple Users
+The application must support many users at the same time.
+Students should ensure the server can:
+1. Track connected users
+2. Store user names
+3. Store room information
+4. Display active users list
+This allows the system to show who is currently online.
+Step 8 – Send Real-Time Messages
+Students must implement the chat messaging feature.
+Message flow:
+1. User types message.
+2. User clicks send.
+3. Message is sent to the server.
+4. Server receives the message.
+5. Server sends message to all users in the room.
+6. All users see the message instantly.
+No page refresh should happen.
+Step 9 – Implement Live Updates
+Students must ensure the application updates automatically.
+Examples of live updates:
+• New message appears immediately
+• New user joins
+• User leaves the room
+• Online user list updates automatically
+This is the main purpose of real-time communication.
+Step 10 – User Join Notification
+When a user joins the room:
+The system should display a notification.
+Example message:
+"Rahul joined the chat"
+This helps users know who is currently entering the chat.
+Step 11 – User Leave Notification
+When a user closes the page or disconnects:
+The system should show a message.
+Example:
+"Rahul left the chat"
+The server should also remove the user from the active users list.
+Step 12 – Build the Interactive Dashboard
+Students should add a simple dashboard showing system activity.
+Dashboard can display:
+• Number of active users
+• Current room name
+• Server connection status
+• Total messages sent
+This helps visualize live system data.
+Step 13 – Optional Database Integration
+Students can optionally connect MongoDB.
+Purpose of database:
+• Store chat messages
+• Store user information
+• Maintain chat history
+Without database:
+Messages disappear when server restarts.
+With database:
+Messages can be saved and loaded again.
+Step 14 – Testing the Application
+Students must test the system properly.
+Testing Steps
+1. Open the application in multiple browsers.
+2. Connect multiple users.
+3. Send messages from different users.
+4. Check if messages appear instantly.
+5. Check join and leave notifications.
+Testing ensures the system works correctly.
+Step 15 – Improve User Experience
+Students can improve the application by adding:
+• Better chat design
+• Message timestamps
+• Emoji support
+• Scrollable chat window
+• User avatars
+These improvements make the application more professional.
+Step 16 – Final Project Demonstration
+Students must prepare a final demo.
+The demo should show:
+1. Multiple users joining the system
+2. Real-time chat communication
+3. Live notifications
+4. Active users dashboard
+5. Smooth real-time updates
+
+make it all as it is saying 

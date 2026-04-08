@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Collaboration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="join-container" class="container">
+        <header>
+            <h1>Join Room</h1>
+        </header>
+        <main>
+            <form id="join-form">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required />
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="General">General</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Design">Design</option>
+                        <option value="Meetings">Meetings</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join Chat</button>
+            </form>
+        </main>
+    </div>
+
+    <div id="chat-container" class="container hidden">
+        <header class="chat-header">
+            <h1>CollabApp</h1>
+            <a href="index.html" class="btn">Leave Room</a>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3>Room Name</h3>
+                <h2 id="room-name"></h2>
+                <h3>Users</h3>
+                <ul id="users"></ul>
+                <div class="dashboard">
+                    <h3>Dashboard</h3>
+                    <p>Status: <span id="status" class="online">Connected</span></p>
+                    <p>Total Users: <span id="user-count">0</span></p>
+                    <p>Total Messages: <span id="total-messages">0</span></p>
+                </div>
+            </div>
+            <div class="chat-messages"></div>
+        </main>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                <button class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
